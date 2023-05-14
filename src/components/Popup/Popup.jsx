@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // SetPrice component
 import SetPrice from './SetPrice/SetPrice';
@@ -10,10 +10,12 @@ import "./Popup.css";
 import google from "./google.svg";
 
 const Popup = () => {
+  const [opened, setOpened] = useState(true);
+
   return (
-    <section className='popup'>
+    <section className='popup' style={{display: opened ? "block": "none"}}>
       {/* Header */}
-      <header className="popup__header">✖</header>
+      <header className="popup__header" onClick={() => setOpened(false)}>✖</header>
 
       {/* Container */}
       <div className="popup__container container">
