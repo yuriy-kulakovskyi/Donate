@@ -1,0 +1,145 @@
+
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+$green: #c2e54f;
+
+.popup {
+  width: 80%; min-height: 80vh;
+  padding: 10px 20px;
+  border: 1px solid $green;
+  box-shadow: 0 0 10px $green;
+  margin: 20px auto;
+  border-radius: 10px;
+
+  // Header styles
+  &__header {
+    width: 100%;
+    @include flex(flex-end, center, row);
+    font-size: 30px;
+    cursor: pointer;
+    color: $green;
+  }
+
+  // Container styles
+  &__container {
+    width: 100%;
+    @include flex(center, flex-start, column);
+    gap: 10px;
+
+    .bold {
+      font-family: "Montserrat";
+      font-weight: 900;
+      color: $green;
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    &__subtitle {
+      width: 100%;
+      text-align: center;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .setPrice {
+      width: 100%; 
+      @include flex(center, center, column);
+      gap: 10px;
+      margin-top: 20px;
+
+      &__input {
+        border: none;
+        text-align: center;
+        font-family: "Montserrat";
+        color: $green;
+        font-weight: 800;
+        user-select: none;
+        font-size: 25px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &__row {
+        @include flex(center, center, row);
+        gap: 20px;
+
+        &__button {
+          border: 1px solid transparent;
+          background-color: $green;
+          padding: 10px 20px;
+          font-family: "Montserrat";
+          color: #fff;
+          text-shadow: 0 0 3px #fff;
+          font-size: 20px;
+          border-radius: 10px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: transparent;
+            border-color: $green;
+            color: #c2e54f;
+          }
+        }
+      }
+    }
+
+    &__column {
+      width: 100%;
+      @include flex(center, center, column);
+      gap: 10px;
+      margin-top: 40px;
+
+      &__name {
+        width: 80%;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0 10px $green;
+        font-family: "Montserrat";
+        font-size: 20px;
+      }
+
+      &__button {
+        width: 80%;
+        padding: 10px;
+        background-color: $green;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        color: #fff;
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 18px;
+        cursor: pointer;
+        @include flex(center, center, row);
+        gap: 5px;
+
+        img {
+          width: 20px; height: 20px;
+        }
+
+        &:hover {
+          background-color: transparent;
+          border-color: $green;
+          color: #c2e54f;
+        }
+      }
+    }
+  }
+}

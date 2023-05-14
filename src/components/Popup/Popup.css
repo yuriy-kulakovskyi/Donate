@@ -1,0 +1,121 @@
+.popup {
+  width: 80%;
+  min-height: 80vh;
+  padding: 10px 20px;
+  border: 1px solid #c2e54f;
+  box-shadow: 0 0 10px #c2e54f;
+  margin: 20px auto;
+  border-radius: 10px; }
+  .popup__header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    font-size: 30px;
+    cursor: pointer;
+    color: #c2e54f; }
+  .popup__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px; }
+    .popup__container .bold {
+      font-family: "Montserrat";
+      font-weight: 900;
+      color: #c2e54f; }
+    .popup__container__title {
+      width: 100%;
+      text-align: center;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 24px; }
+    .popup__container__subtitle {
+      width: 100%;
+      text-align: center;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 18px;
+      font-weight: 600; }
+    .popup__container .setPrice {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px; }
+      .popup__container .setPrice__input {
+        border: none;
+        text-align: center;
+        font-family: "Montserrat";
+        color: #c2e54f;
+        font-weight: 800;
+        user-select: none;
+        font-size: 25px; }
+        .popup__container .setPrice__input:focus {
+          outline: none; }
+      .popup__container .setPrice__row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px; }
+        .popup__container .setPrice__row__button {
+          border: 1px solid transparent;
+          background-color: #c2e54f;
+          padding: 10px 20px;
+          font-family: "Montserrat";
+          color: #fff;
+          text-shadow: 0 0 3px #fff;
+          font-size: 20px;
+          border-radius: 10px;
+          cursor: pointer; }
+          .popup__container .setPrice__row__button:hover {
+            background-color: transparent;
+            border-color: #c2e54f;
+            color: #c2e54f; }
+    .popup__container__column {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 40px; }
+      .popup__container__column__name {
+        width: 80%;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0 10px #c2e54f;
+        font-family: "Montserrat";
+        font-size: 20px; }
+      .popup__container__column__button {
+        width: 80%;
+        padding: 10px;
+        background-color: #c2e54f;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        color: #fff;
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 5px; }
+        .popup__container__column__button img {
+          width: 20px;
+          height: 20px; }
+        .popup__container__column__button:hover {
+          background-color: transparent;
+          border-color: #c2e54f;
+          color: #c2e54f; }
+
+/*# sourceMappingURL=Popup.css.map */
