@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // SetPrice component
-import SetPrice from './SetPrice/SetPrice';
+import SetPrice from '../../features/SetPrice/SetPrice';
 
 // styles
 import "./Popup.css";
